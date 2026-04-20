@@ -3,69 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kadidiatou ❤️</title>
+<title>~~ROKI ❤️</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    .card {
-        background: rgba(255,255,255,0.15);
-        padding: 30px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-        max-width: 360px;
-        animation: fadeIn 2s;
-        position: relative;
-        z-index: 2;
-    }
+/* Animation fond doux */
+body::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
+    background-size: 50px 50px;
+    animation: moveBg 15s linear infinite;
+    z-index: 0;
+}
 
-    h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
+@keyframes moveBg {
+    from { transform: translate(0,0); }
+    to { transform: translate(-50px,-50px); }
+}
 
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    max-width: 380px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease;
+    position: relative;
+    z-index: 1;
+}
 
-    .heart {
-        font-size: 42px;
-        animation: beat 1s infinite;
-    }
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
 
-    .music {
-        margin-top: 15px;
-        font-size: 14px;
-        opacity: 0.9;
-    }
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
 
-    
+.heart {
+    font-size: 45px;
+    animation: beat 1s infinite;
+    cursor: pointer;
+}
 
-    @keyframes beat {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.2); }
-        100% { transform: scale(1); }
-    }
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
-	
-    }
-	
-	.music-btn {
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.music-btn {
     margin-top: 15px;
     padding: 10px 20px;
     border: none;
@@ -82,54 +92,99 @@
     color: white;
 }
 
-	
+.signature {
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.scroll-text {
+    height: 160px;
+    overflow: hidden;
+}
+
+.scroll-text p {
+    animation: scrolldown 60s linear infinite;
+}
+
+@keyframes scrolldown {
+    0% { transform: translateY(25%); }
+    100% { transform: translateY(-100%); }
+}
+
+
+
+
 </style>
 </head>
 
 <body>
 
-<!-- Musique Dadju – Reine -->
-
-
 <div class="card">
-    <div class="heart">❤️</div>
+	 <h1>A TOI MA BESTIE ~~ROKI💕</h1>
+    <div class="heart" onclick="playMusic()">🌹</div>
+	<div class="scroll-text">
+    <p> Tout dabord appuie sur la fleur. <br><br><br><br>
+	
+	
 
-    <h1>KADIDIATOU BARRY</h1>
+		Aujourd’hui n’est pas un jour comme les autres,
+		C’est le tien, celui où le monde devient un peu plus beau.
+		Car il a vu naître une personne rare,
+		Une amie… devenue bien plus que ça.
 
-    <p>
-        Tu es ma reine, mon évidence.<br>
-        Même quand on se dispute, mon cœur ne doute jamais de toi.<br><br>
-        Tu es mon calme dans le bruit,<br>
-        mon sourire dans les moments sombres.<br><br>
-        Je te choisis aujourd’hui,<br>
-        demain et encore après.
+		Merci d’être là dans mes délires,
+		Dans mes problèmes… et surtout dans les problèmes que TU crées 😭😂
+
+		Franchement, je me demande encore
+		Si Dieu m’a envoyé une bénédiction…
+		Ou un petit problème bien organisé 🤣
+
+		Mais une chose est sûre,
+		Je ne t’échangerais pour rien au monde
+		(même pas contre de l’argent… bon ça dépend combien 👀😂)
+
+		Alors aujourd’hui, je veux te dire merci,
+		Merci d’être toi, simplement.
+		Et te souhaiter un anniversaire rempli de bonheur,
+		D’amour, de rêves… et de réussite.
+
+		Reste comme tu es : incroyable, drôle, un peu bizarre…
+		Bref parfaite quoi ❤️
+
+		Que cette nouvelle année t’apporte tout ce que tu mérites,
+		Et même plus encore.
+		Et surtout… moins de bêtises
+		(même si on sait que c’est impossible 😭😂)
+
+		Joyeux anniversaire ma sœur de cœur et un petit bisous labas😘🎉❤️
+	
+	
+	
     </p>
 
-    <p><strong>— Boubacar</strong></p>
+    
 
-    <div class="music">
-        🎶 Dadju — Reine
-        <br>
-        (Appuie sur ▶️ pour lancer la musique)
-    </div>
-	<button onclick="playMusic()" class="music-btn">
-    ▶️ Lancer la musique
-</button>
-
-	
 </div>
 
-<script>
-function playMusic() {
-    document.getElementById("music").play();
-}
-</script>
-
-
-</body>
-
+<!-- AUDIO DOIT ÊTRE DANS LE BODY -->
 <audio id="music" loop>
     <source src="DADJU - Reine.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+function playMusic() {
+    var music = document.getElementById("music");
+    music.play();
+}
+</script>
+<footer>
+        <p> <div class="signature">
+        Fait par SINALA 💕
+    </div>
+</p>
+    </footer>
+</body>
 </html>
+
+
